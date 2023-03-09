@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Barlow Semi Condensed", sans-serif;
+}
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #f2f2f2;
+    gap: 30px;
+}
+main {
+	width: 825px;
+	height: 572px;
+	display: flex;
+	justify-content: flex-start;
+	/* align-items: center; */
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+.user-info {
+	display: flex;
+	flex-direction: row;
+	gap: 17px;
+	margin-bottom: 18px;
+}
+.user-info h3 {
+	font-family: "Barlow Semi Condensed";
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 13px;
+	color: #ffffff;
+	margin-bottom: 4px;
+}
+.user-info p {
+	font-family: "Barlow Semi Condensed";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 11px;
+	line-height: 11px;
+	color: #ffffff;
+	mix-blend-mode: normal;
+	opacity: 0.5;
+}
+h2 {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	color: #ffffff;
+	margin-bottom: 16px;
+}
+p {
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 18px;
+	color: #cfcfcf;
+	mix-blend-mode: normal;
+	opacity: 0.7;
+}
+.card {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+	border-radius: 8px;
+	padding: 32px;
+}
+#purple {
+	width: 540px;
+	height: 282px;
+	background: #733fc8 url(./src/img/background.svg) no-repeat;
+    background-position: 80% 0%;
+}
+#gray {
+	width: 255px;
+	height: 282px;
+	background-color: #48556a;
+}
+#big-white {
+	width: 255px;
+	height: 572px;
+	background-color: #ffffff;
+}
+#big-white .user-info h3,
+#big-white .user-info p,
+#small-white .user-info h3,
+#small-white .user-info p {
+	color: #48556a;
+}
+#small-white {
+	width: 255px;
+	height: 266px;
+	background-color: #ffffff;
+}
+#black {
+	width: 540px;
+	height: 266px;
+	background-color: #19202d;
+}
+.text-gray {
+	color: #48556a;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        gap: 24px;
+        flex-direction: column;
+        padding: 10%;
+        height: auto;
+    }
+    main {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        flex-direction: column;
+        gap: 24px;
+    }
+    #purple {
+        width: 100%;
+        height: auto;
+    }
+    #gray {
+        width: 100%;
+        height: auto;
+    }
+    #big-white {
+        width: 100%;
+        height: auto;
+    }
+    #small-white {
+        width: 100%;
+        height: auto;
+    }
+    #black {
+        width: 100%;
+        height: auto;
+    }
+}
